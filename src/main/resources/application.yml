@@ -1,0 +1,18 @@
+#应用访问路径配置
+server:
+  servlet:
+    context-path: /demo
+  tomcat:
+    max-connections: 1000
+    max-threads: 1000
+    accept-count: 200
+  port: 8080
+
+#springboot原生配置
+spring:
+  application:
+    name: lock-service
+#redis配置类
+redisson:
+  config:
+    filePath: config/redisson-config.json
